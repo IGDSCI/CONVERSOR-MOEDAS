@@ -30,7 +30,7 @@
                 <option value="bitcoin" name="bitcoin">Bitcoin (BTC)</option>
             </select>
             <input type="submit" value="Converter">
-            <br>
+            <br><br>
 
             <?php 
                 switch ($moedaSelecionada) {
@@ -46,6 +46,7 @@
                     default:
                 }
             ?>
+            <br><br><br>
         </form>
     </div>
     
