@@ -28,7 +28,7 @@
         <h1 id="titulo">Conversor de moedas</h1>
         <form action="index.php" method="POST">
             <h1 id="texto-input">Insira o valor em reais</h1>
-            <input type="text" name="valor" id=""> <h1 id="texto-input">e</h1>
+            <input type="text" name="valor" placeholder="EXP: 5.37"> <h1 id="texto-input">e</h1>
             <br>
             <h1 id="texto-input">Escolha para qual moeda converter</h1>
             <select id="moedas" name="moedas">
@@ -42,13 +42,16 @@
             <?php 
                 switch ($moedaSelecionada) {
                     case 'dolar':
-                        echo '<h1 id="texto-result">R$' . $valor_usuario . ' para USD -> U$' . $valorConvertido = $valor_usuario / $valor_USD . '</h1>';
+                        $valorConvertido = $valor_usuario / $valor_USD;
+                        echo '<h1 id="texto-result">R$' . $valor_usuario . ' para USD -> U$' . number_format($valorConvertido, 2, ',', '.') . '</h1>';
                         break;
                     case 'euro':
-                        echo '<h1 id="texto-result">R$' . $valor_usuario . ' para EUR -> €' . $valorConvertido = $valor_usuario / $valor_EUR . '</h1>';
+                        $valorConvertido = $valor_usuario / $valor_EUR;
+                        echo '<h1 id="texto-result">R$' . $valor_usuario . ' para EUR -> €' . number_format($valorConvertido, 2, ',', '.') . '</h1>';
                         break;
                     case 'bitcoin':
-                        echo '<h1 id="texto-result">R$' . $valor_usuario . ' para BTC -> BTC ' . $valorConvertido = $valor_usuario / $valor_BTC . '</h1>';
+                        $valorConvertido = $valor_usuario / $valor_BTC;
+                        echo '<h1 id="texto-result">R$' . $valor_usuario . ' para BTC -> BTC ' . $valorConvertido . '</h1>';
                         break;
                     default:
                 }
@@ -59,11 +62,11 @@
     
     <div id="container">
         <div id="div-dolar">
-            <h1 id="h1-dolar">Valor de 1 Dolár hoje R$<?php echo $valor_USD;?></h1>
+            <h1 id="h1-dolar">Valor de 1 Dolár hoje: R$<?php echo number_format($valor_USD, 2, ',', '.'); ?></h1>
         </div>
     
         <div id="div-euro">
-            <h1>Valor de 1 Euro hoje: R$<?php echo $valor_EUR; ?></h1>
+            <h1>Valor de 1 Euro hoje: R$<?php echo number_format($valor_EUR, 2, ',', '.'); ?></h1>
         </div>
 
         <div id="div-bitcoin">
