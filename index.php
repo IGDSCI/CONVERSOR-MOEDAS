@@ -1,11 +1,18 @@
 <?php 
     $url = "https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL";
     $conversao = json_decode(file_get_contents($url));
-    $valor_usuario = $_POST['valor'];
+    
     $valor_USD = $conversao->USDBRL->bid;
     $valor_EUR = $conversao->EURBRL->bid;
     $valor_BTC = $conversao->BTCBRL->bid;
-    $moedaSelecionada = $_POST['moedas'];
+    $moedaSelecionada = '';
+    if (isset($_POST['valor'])){
+        $valor_usuario = $_POST['valor'];
+    }
+
+    if (isset($_POST['moedas'])){
+        $moedaSelecionada = $_POST['moedas'];
+    }
 ?>
 
 <!DOCTYPE html>
