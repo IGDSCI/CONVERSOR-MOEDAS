@@ -3,7 +3,8 @@
 <h2>Criei um site simples onde podemos verificar a cotação de diferentes moedas, no site o usuário tem a liberdade de escolher entre as 3 moedas disponíveis e inserir o valor em real que ele deseja converter para aquela moeda especifíca</h2>
 
 ## Imagens do site:
+![image](https://github.com/IGDSCI/CONVERSOR-MOEDAS/assets/114839208/a8f255bc-2ef7-452e-9794-cb19fa702a16)
+![image](https://github.com/IGDSCI/CONVERSOR-MOEDAS/assets/114839208/de0fd774-f44a-455b-9299-cc52699a01a7)
+![image](https://github.com/IGDSCI/CONVERSOR-MOEDAS/assets/114839208/b4a60faa-06dd-48f9-889e-357dfd3010b2)
 
-![image](https://github.com/IGDSCI/CONVERSOR-MOEDAS/assets/114839208/6f8be6b6-3fdc-4158-9515-f0f6198227fa)
-![image](https://github.com/IGDSCI/CONVERSOR-MOEDAS/assets/114839208/a9627e5c-af65-4325-a371-c44b55be1c38)
-![image](https://github.com/IGDSCI/CONVERSOR-MOEDAS/assets/114839208/c5c22b1a-7c9e-4358-8b48-ce7870ba1bf5)
+
