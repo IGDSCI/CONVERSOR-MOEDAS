@@ -1,0 +1,63 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #3d423c;
+}
+
+#texto-input{
+    display: inline;
+    font-size: 25px;
+}
+
+#texto-result{
+    display: inline;
+    font-size: 25px;
+    background-color: #c8c9b5;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#div-dolar{
+    width: 440px;
+    text-align: center;
+    background-color: #dedfc5;
+    border: 1px solid;
+}
+
+#div-euro{
+    width: 440px;
+    text-align: center;
+    background-color: #dedfc5;
+    border: 1px solid;
+}
+
+#div-bitcoin{
+    width: 480px;
+    text-align: center;
+    background-color: #dedfc5;
+    border: 1px solid;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 540px;
+}
+
+#conversor{
+    text-align: center;
+    background-color: #dedfc5;
+    width: 850px;
+    margin: auto;
+    border: 1px solid;
+}
+
+#titulo{
+    background-color: #c8c9b5;
+    border-radius: 10px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid;
+}
